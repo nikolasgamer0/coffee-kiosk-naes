@@ -374,8 +374,7 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease;
-    }
-
+  }
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -561,9 +560,13 @@
     });
   </script>
 <script>
-  setTimeout(() => {
-    document.getElementById("loader").classList.add("hidden");
-  }, 2000);
+  window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    if (loader) {
+      loader.classList.add("hide");
+      document.body.classList.remove("no-scroll");
+    }
+  });
 </script>
 </body>
 </html>
