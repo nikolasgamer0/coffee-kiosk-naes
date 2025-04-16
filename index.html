@@ -401,11 +401,6 @@
 </head>
 <body>
 
-  <div id="loader">
-    <div class="spinner"></div>
-    <div class="loader-text">Μισό λεπτό η σελίδα φορτώνει... ☕</div>
-  </div>
-
   <!-- Splash Intro -->
   <div id="splash">
     <img src="logo.jpg" alt="Coffee Kiosk Logo">
@@ -559,14 +554,5 @@
       }, 3000);
     });
   </script>
-<script>
-  window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");
-    if (loader) {
-      loader.classList.add("hide");
-      document.body.classList.remove("no-scroll");
-    }
-  });
-</script>
 </body>
 </html>
