@@ -370,6 +370,12 @@
       color: #5c4033;
       animation: fadein 1s ease-in-out infinite alternate;
     }
+    .loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+    }
+
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -377,9 +383,6 @@
     @keyframes fadein {
       from { opacity: 0.4; }
       to { opacity: 1; }
-    }
-    .hidden {
-      display: none;
     }
 
 @keyframes pulse0112 {
